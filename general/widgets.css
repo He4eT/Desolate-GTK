@@ -1040,7 +1040,7 @@ switch:disabled image,
 switch,
 switch slider{border-radius: 0.0px;}
 
-switch{color: currentcolor; background-color: shade(@gtk_bg_color, 0.7);}
+switch{color: currentcolor; background-color: shade(@gtk_bg_color, 0.8);}
 
 switch slider {
 	margin: -1px;
