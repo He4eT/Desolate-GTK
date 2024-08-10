@@ -57,18 +57,29 @@ infobar > revealer > box { padding: 8px; border-spacing: 10px; }
 
 /* Menus */
 
-popover.background{ background-color: transparent; border: none;}
+popover.background {
+	background-color: transparent;
+	border: none;
+}
 
 popover.background > arrow,
 popover.background > contents {
 	border: 0px solid @gtk_transparent_borders;
-	/* box-shadow: 0 1px 2px @gtk_menu_shadow; */
 	box-shadow: none;
 }
 
 popover.background > arrow,
-popover.background > contents
-{background-color: @gtk_bg_color;}
+popover.background > contents {
+	background-color: @gtk_bg_color;
+}
+popover.menu contents {
+	padding-top: 0px;
+}
+
+popover.menu modelbutton:selected {
+	outline: none;
+	background-color: shade(@gtk_selected_bg_color,1.4);
+}
 
 popover.menu.background > contents .linked button:first-child{ margin-left: 4px; }
 popover.menu.background > contents .linked button:last-child{ margin-right: 4px; }

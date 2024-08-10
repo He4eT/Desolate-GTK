@@ -1433,7 +1433,7 @@ window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal:
 .csd .menu{ padding: 4px 1px; }
 
 popover.menu.background > contents,
-popover.background.menu > contents { padding: 4px 0; }
+popover.background.menu > contents { padding: 0px 0; }
 popover.background > contents{padding: 4px;}
 popover.menu box.inline-buttons { padding: 0 8px; }
 
