@@ -13,8 +13,8 @@
 	-GtkScrollbar-has-forward-stepper: false;
 	outline-color: alpha(currentcolor,0.3);
 	outline-style: solid;
-	outline-offset: -2px;
-	outline-width: 2px;
+	outline-offset: -1px;
+	outline-width: 1px;
 	-gtk-outline-radius: 0.0px;
 }
 

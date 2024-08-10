@@ -1958,8 +1958,10 @@ row.activatable:selected,
 row.activatable:selected:hover,
 row.activatable:hover:selected,
 .navigation-sidebar > row:selected,
-listview row:selected
-{color: inherit; background-image: image(alpha(@gtk_selected_bg_color,0.4));}
+listview row:selected {
+	color: inherit;
+	background-color: shade(@gtk_selected_bg_color,1.4);
+}
 
 /* Inverted Accent */
 
@@ -2090,7 +2092,7 @@ progressbar progress,
 scale highlight,
 levelbar block,
 scrollbar
-{  transition: 0.5s;  }
+{  transition: 0.3s;  }
 
 menuitem check,
 menuitem radio,
