@@ -598,7 +598,7 @@ calendar header button:hover,
 .osd button.flat:hover,
 .sidebar actionbar.inline-toolbar button:hover,
 actionbar.flat button:hover
-{background-color: alpha(@gtk_selected_bg_color, 0.2);}
+{background-color: alpha(@gtk_selected_bg_color, 0.4);}
 
 /* Checked State */
 
