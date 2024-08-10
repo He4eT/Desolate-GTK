@@ -1,8 +1,17 @@
 /* GTK4 */
 
+*:not(text):focus:focus-visible {
+	outline-color: alpha(currentcolor,0.3);
+	outline-style: solid;
+	outline-offset: -2px;
+	outline-width: 2px;
+}
+
 window.aboutdialog image.large-icons { -gtk-icon-size: 128px; }
 
-check,radio { -gtk-icon-size: 16px; }
+check,radio {
+	-gtk-icon-size: 16px;
+}
 
 frame,
 .frame
