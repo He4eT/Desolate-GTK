@@ -53,7 +53,7 @@ check.view:not(treeview):not(:checked):selected,
 radio.view:not(treeview):not(:checked):selected,
 dialog filechooser .sidebar .frame,
 popover scrolledwindow.frame viewport.frame list
-{background-color: shade(@gtk_base_color, 0.9);}
+{background-color: shade(@gtk_base_color, 1.2);}
 
 /* sidebars color background */
 scrolledwindow.view list,
