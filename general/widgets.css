@@ -1105,7 +1105,7 @@ levelbar block{margin: 2px;}
  *************/
  
 notebook header,
-tabbox{ border: 1px solid @gtk_borders; background-color: shade(@gtk_bg_color, 0.9);}
+tabbox{ border: 1px solid @gtk_borders; background-color: @gtk_bg_color;}
 
 notebook > header.top {border-width: 0 0 1px 0 ;}
 notebook > header.bottom {border-width: 1px 0 0 0;}
@@ -1123,7 +1123,7 @@ notebook > header.left > tabs > tab:last-child,
 notebook > header.right > tabs > tab:last-child{}
 
 tabbox tab,
-notebook tab{margin: 0px; border-color: transparent; font-weight: bold; border-radius: 0;}
+notebook tab{margin: 0px; border-color: transparent; font-weight: normal; border-radius: 0;}
 
 /* Hdy Tab */
 tabbox tab{ }
