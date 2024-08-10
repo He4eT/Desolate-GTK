@@ -2,7 +2,6 @@
 
 gtk-color-scheme =
 "base_color:#E0E0E0\nbg_color:#BDBDBD\ntooltip_bg_color:#BDBDBD\nselected_bg_color:#A3A3A3\ntext_color:#212121\nfg_color:#212121\ntooltip_fg_color:#212121\nselected_fg_color:#212121\nmenubar_bg_color:#BDBDBD\nmenubar_fg_color:#212121\ntoolbar_bg_color:#BDBDBD\ntoolbar_fg_color:#212121\nmenu_bg_color:#BDBDBD\nmenu_fg_color:#212121\npanel_bg_color:#BDBDBD\npanel_fg_color:#212121\nlink_color:#7400ff\nbtn_bg_color:#BDBDBD\nbtn_fg_color:#212121\ntitlebar_bg_color:#BDBDBD\ntitlebar_fg_color:#212121\nprimary_caret_color:#212121\nsecondary_caret_color:#212121\naccent_bg_color:#212121\n"
-# Default Style
 
 style "murrine-default" {
 	GtkArrow::arrow-scaling= 1.0
@@ -10,18 +9,13 @@ style "murrine-default" {
 	GtkButton::child-displacement-x = 0
 	GtkButton::child-displacement-y = 0
 
-	#GtkButton::default-border = { 0, 0, 0, 0 }
 	GtkButton::inner-border        = { 0, 0, 1, 0 }
 	GtkButton::focus-line-width    = 2
-	#GtkButton::focus-padding       = 4
 	GtkButton::focus-padding       = 2
-	#GtkButton::interior-focus = 1
 
 	GtkEntry::inner-border        = { 4, 4, 5, 4 }
 	GtkComboBox::inner-border     = { 4, 4, 6, 5 }
 	GtkComboBoxText::inner-border = { 4, 4, 6, 5 }
-
-	#GtkButtonBox::child-min-height = 52
 
 	GtkCheckButton::indicator-size = 30
 
@@ -271,12 +265,9 @@ style "murrine-scale" = "murrine-thin" {
 	bg[INSENSITIVE] = mix(0.95, @bg_color, @btn_bg_color)
 
 	engine "murrine" {
-		roundness = 25
-		#roundness = 0
+		roundness = 0
 		gradient_shades = { 1.08, 1.08, 1.08, 1.08 }
-		#border_shades = { 0.5, 0.5 }
 		border_colors = { mix(0.25, @btn_fg_color, @btn_bg_color), mix(0.25, @btn_fg_color, @btn_bg_color) }
-		#trough_shades = { 1.08, 1.08 }
 		trough_border_shades = { 0.8, 0.8 }
 	}
 }
@@ -592,9 +583,6 @@ style "bold-panel-item" {
 widget "*Panel*MenuBar*" style "bold-panel-item"
 widget "*gimmie*" style "bold-panel-item"
 
-# widget_class "*Mail*" style "murrine-panel" # Disabled to fix Evolution bug
-# class "*Panel*" style "murrine-panel" # Disabled to fix bug
-
 # XFCE Styles
 
 style "workspace-switcher" = "murrine-panel" {
@@ -861,9 +849,6 @@ style "inkscape-toolbar-fix" {
 	}
 }
 
-#widget "*GtkHandleBox*" style "inkscape-toolbar-fix"
-#widget "*HandleBox*CommandsToolbar*" style "inkscape-toolbar-fix"
-#widget "*HandleBox*SnapToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*SelectToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*NodeToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*TweakToolbar*" style "inkscape-toolbar-fix"
@@ -881,9 +866,6 @@ widget "*HandleBox*LPEToolToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*DropperToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*ConnectorToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*PaintbucketToolbar*" style "inkscape-toolbar-fix"
-
-
-
 
 style "gimp-default-style" {
 	# Uncommenting this line allows to set a different (smaller) font for GIMP.
@@ -981,7 +963,7 @@ widget_class "*XfsmLogoutDialog*" style "xfsm-logout"
 widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
 
 
-# button fg workarounds:
+# Button fg workarounds:
 widget_class "*.<GtkButton>.<GtkLabel>" style "murrine-buttonlabel"
 widget_class "*<GtkButton>*<GtkLabel>*" style:highest "murrine-buttonlabel"
 widget_class "*<GtkCheckButton>*<GtkLabel>*" style:highest "clearlooks-radiocheck-label"
