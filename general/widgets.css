@@ -1414,7 +1414,10 @@ menubar.chromium  {background-color: @gtk_bg_color; color:@gtk_fg_color;}
 
 .context-menu { font: initial; }
 
-accelerator { color: alpha(currentColor,0.5); }
+accelerator {
+	color: alpha(currentColor,0.5);
+	margin-left: 24px;
+}
 
 .background.popup { background-color: transparent;	border-radius: 0.0px;}
 

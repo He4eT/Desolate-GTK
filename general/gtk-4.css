@@ -51,8 +51,11 @@ infobar > revealer > box { padding: 8px; border-spacing: 10px; }
 popover.background{ background-color: transparent; border: none;}
 
 popover.background > arrow,
-popover.background > contents
-{ border: 1px solid @gtk_transparent_borders; box-shadow: 0 1px 2px @gtk_menu_shadow; }
+popover.background > contents {
+	border: 0px solid @gtk_transparent_borders;
+	/* box-shadow: 0 1px 2px @gtk_menu_shadow; */
+	box-shadow: none;
+}
 
 popover.background > arrow,
 popover.background > contents
