@@ -86,8 +86,10 @@ menubar,
 
 toolbar { -GtkWidget-window-dragging: false;}
 
-popover.background
-{ border: 1px solid @gtk_transparent_borders; 	box-shadow: 0 1px 2px @gtk_menu_shadow; }
+popover.background {
+	border: 1px solid @gtk_transparent_borders;
+	box-shadow: 0 1px 2px @gtk_menu_shadow;
+}
 
 menu,
 .menu,
@@ -96,16 +98,26 @@ popover.background
 
 /* Tooltips */
 
-tooltip.background { background-color: alpha(black,0.9); background-clip: padding-box; }
+tooltip.background {
+	background-color: @gtk_bg_color;
+	background-clip: padding-box;
+}
 
 tooltip.background.csd:first-child,
 tooltip.background.csd:last-child,
-tooltip.background.csd decoration
-{border-radius: 0.0px;}
+tooltip.background.csd decoration {
+	border-radius: 0.0px;
+}
 
 tooltip.background label { padding: 0px;}
-tooltip.background.csd decoration { padding: 0; box-shadow: 0 0 0 1px alpha(white,0.2); }
-tooltip * { background-color: transparent;	color: white;}
+tooltip.background.csd decoration {
+	padding: 0;
+	box-shadow: 0 0 0 1px alpha(white,0.2);
+}
+tooltip * {
+	background-color: transparent;
+	color: @gtk_fg_color;
+}
 
 /* Scale Marks */
 scale value {
