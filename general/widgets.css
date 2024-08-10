@@ -128,8 +128,8 @@ tabbox tab,
 notebook tab,*/
 scale trough,
 levelbar trough,
-menu,
-.menu,
+/* menu, */
+/* .menu, */
 editablelabel > stack > text
 { border-width: 1px; border-style: solid; } /* widget borders */
 
