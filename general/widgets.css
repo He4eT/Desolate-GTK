@@ -911,7 +911,7 @@ treeview.view radio:indeterminate,
 treeview.view.content-view.check:not(list):checked,
 iconview.content-view.check:not(list):checked,
 .content-view:not(list) check:checked
-{color: @gtk_selected_fg_color; background-color: @gtk_selected_bg_color;}
+{color: @gtk_selected_fg_color; background-color: shade(@gtk_selected_bg_color,1.9);}
 
 /* Sizes of check and radio */
 check,
