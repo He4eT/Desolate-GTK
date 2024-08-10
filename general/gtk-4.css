@@ -63,17 +63,34 @@ popover.menu.background > contents .linked button:last-child{ margin-right: 4px;
 
 /* Tooltips */
 
-tooltip { padding: 4px; border-radius: 0.0px; box-shadow: none; }
-tooltip.background { background-color: alpha(black,0.9); background-clip: padding-box; border: 1px solid alpha(white,0.2); color: white; }
-tooltip > box { border-spacing: 6px; }
+tooltip {
+	padding: 4px;
+	border-radius: 0.0px;
+	box-shadow: none;
+}
+tooltip.background {
+	background-color: @gtk_bg_color;
+	background-clip: padding-box;
+	color: @gtk_fg_color;
+}
+tooltip > box {
+	border-spacing: 6px;
+}
 
 /* Entry */
 
 searchbar > revealer > box entry{ margin: 8px;}
 
+spinbutton > text {
+	padding: 6px;
+}
+
 spinbutton.vertical > text,
 spinbutton:not(.vertical),
-entry { outline: 0 solid transparent; outline-offset: 4px; }
+entry {
+	outline: 0 solid transparent;
+	outline-offset: 4px;
+}
 
 spinbutton.vertical > text:focus-within,
 spinbutton:focus-within:not(.vertical),
