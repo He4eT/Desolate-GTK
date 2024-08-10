@@ -34,9 +34,9 @@ headerbar .subtitle,
 
 .background{background-color: @gtk_bg_color; color: @gtk_fg_color;}
 
+/* notebook > stack:not(:only-child), */
 .view,
 list,
-notebook > stack:not(:only-child),
 .nautilus-window,
 textview text,
 .dynamic-notebook,
