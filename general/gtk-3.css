@@ -12,10 +12,10 @@
 	-GtkScrollbar-has-backward-stepper: false;
 	-GtkScrollbar-has-forward-stepper: false;
 	outline-color: alpha(currentcolor,0.3);
-	outline-style: dashed;
-	outline-offset: -3px;
-	outline-width: 1px;
-	-gtk-outline-radius: 4.0px;
+	outline-style: solid;
+	outline-offset: -2px;
+	outline-width: 2px;
+	-gtk-outline-radius: 0.0px;
 }
 
 frame > border,
@@ -101,7 +101,7 @@ tooltip.background { background-color: alpha(black,0.9); background-clip: paddin
 tooltip.background.csd:first-child,
 tooltip.background.csd:last-child,
 tooltip.background.csd decoration
-{border-radius: 4.0px;}
+{border-radius: 0.0px;}
 
 tooltip.background label { padding: 0px;}
 tooltip.background.csd decoration { padding: 0; box-shadow: 0 0 0 1px alpha(white,0.2); }
@@ -198,7 +198,7 @@ messagedialog decoration{ box-shadow: 0 2px 4px @gtk_shadow,0 0 0 1px @gtk_trans
 dialog decoration:backdrop,
 messagedialog decoration:backdrop{ box-shadow: 0 2px 4px alpha(@gtk_shadow,0.5),0 0 0 1px @gtk_transparent_borders;}
 
-.csd.popup decoration {box-shadow: 0 1px 2px @gtk_menu_shadow; border-radius: 4.0px; }
+.csd.popup decoration {box-shadow: 0 1px 2px @gtk_menu_shadow; border-radius: 0.0px; }
 
 .ssd decoration{box-shadow: 0 0 0 1px @gtk_transparent_borders;}
 

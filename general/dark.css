@@ -1,4 +1,3 @@
-
 @import url("gtk-version.css");
 @import url("../general/gtk-colors.css");
 @import url("../general/widgets.css");
@@ -38,8 +37,10 @@ iconview.content-view.check:not(list),
 .view radio:not(:checked):selected,
 check.view:not(treeview):not(:checked):selected,
 radio.view:not(treeview):not(:checked):selected,
-progressbar trough
-{background-clip: padding-box;}
+progressbar trough {
+    background-clip: padding-box;
+}
+
 check:checked,
 check:indeterminate,
 radio:checked,
@@ -56,17 +57,18 @@ progressbar progress,
 levelbar block,
 scale highlight,
 button.suggested-action,
-button.destructive-action
-{background-clip: border-box;}
+button.destructive-action {
+    background-clip: border-box;
+}
 
 .window-frame, .window-frame:backdrop {
     box-shadow: 0 0 0 black; /* removes shadow completely */
     border-style: none;
-    margin: 1px; /* this retains the ability to resize with the mouse, if 1px is too narrow, set some higher values */
+    margin: 0px; /* this retains the ability to resize with the mouse, if 1px is too narrow, set some higher values */
     border-radius: 0;
 }
 
 window-frame, window, headerbar, .titlebar, menubar {
-	box-shadow: none;
-	margin: 1px;
+    box-shadow: none;
+    margin: 0px;
 }
