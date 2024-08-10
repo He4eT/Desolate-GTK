@@ -956,17 +956,26 @@ button:link:checked,
 button:visited,
 button:visited:hover,
 button:visited:active,
-button:visited:checked
-{background-image: none; background-color: transparent; box-shadow: none;}
+button:visited:checked {
+	background-image: none;
+	background-color: transparent;
+	box-shadow: none;
+}
 
-button:link > label, button:link, *:link { color: @gtk_selected_bg_color; }
-button:visited > label,	button:visited{ color: mix(@gtk_selected_bg_color,@error_color,0.5); }
+button:link > label, button:link, *:link {
+	color: @gtk_fg_color;
+	text-decoration: underline;
+}
+button:visited > label,	button:visited{
+	color: shade(@gtk_fg_color,1.2);
+	text-decoration: underline;
+}
 
 button:link > label:disabled,
 button:visited > label:disabled,
 button:disabled:link,
 button:disabled:visited,
-*:link:disabled { color: alpha(@gtk_selected_bg_color,0.5); }
+*:link:disabled { color: alpha(@gtk_fg_color,0.5); }
 
 button.circular,
 .circular{ border-radius: 9999px; }
