@@ -1921,7 +1921,7 @@ XfdesktopIconView.view:active,
 #MozillaGtkWidget.background > widget > scrolledwindow > textview text selection,
 assistant .sidebar label.highlight,
 window.assistant .sidebar > label.highlight
-{color: @gtk_selected_fg_color; background-color: @gtk_selected_bg_color;}
+{color: @gtk_selected_fg_color; background-color: alpha(@gtk_selected_bg_color, 0.4);}
 
 /* Menu and Popover */
 menubar > menuitem:hover,
