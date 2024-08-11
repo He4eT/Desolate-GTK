@@ -58,7 +58,7 @@ levelbar block,
 scale highlight,
 button.suggested-action,
 button.destructive-action {
-    background-clip: border-box;
+    background-clip: padding-box;
 }
 
 .window-frame, .window-frame:backdrop {
