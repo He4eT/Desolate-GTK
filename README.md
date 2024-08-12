@@ -34,7 +34,7 @@ You could change theme colors in `general/gtk-colors.css`:
 
 - [GTK Theming Guide](https://gtkthemingguide.vercel.app/)
 - [AWF - A widget factory (extended)](https://github.com/luigifab/awf-extended)
-- `GTK_THEME=Desolate-GTK awf-gtk3`
+- `GTK_THEME=Desolate-GTK GTK_DEBUG=interactive awf-gtk3`
 
 ## License
 
