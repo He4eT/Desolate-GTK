@@ -11,7 +11,7 @@ This is a variation of [linea-nord-color](https://github.com/deviantfero/wpgtk-t
 1. Clone the repository
 ```sh
 cd ~/.themes
-git clone https://github.com/He4eT/desolate-GTK.git Desolate
+git clone https://github.com/He4eT/Desolate-GTK.git Desolate
 ```
 2. Apply the theme in any way you like. You can use `lxappearance`, for example.
 
