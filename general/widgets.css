@@ -34,7 +34,6 @@ headerbar .subtitle,
 
 .background{background-color: @gtk_bg_color; color: @gtk_fg_color;}
 
-/* notebook > stack:not(:only-child), */
 .view,
 list,
 .nautilus-window,
@@ -54,6 +53,18 @@ radio.view:not(treeview):not(:checked):selected,
 dialog filechooser .sidebar .frame,
 popover scrolledwindow.frame viewport.frame list {
 	background-color: shade(@gtk_base_color, 1.18);
+}
+
+.view:backdrop,
+entry:backdrop,
+list:backdrop,
+textview text:backdrop,
+spinbutton:backdrop,
+check:backdrop,
+radio:backdrop,
+.nautilus-window:backdrop,
+.dynamic-notebook:backdrop {
+	background-color: @gtk_bg_color;
 }
 
 /* sidebars color background */
