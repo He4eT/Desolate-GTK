@@ -15,7 +15,7 @@ git clone https://github.com/He4eT/Desolate-GTK.git Desolate
 ```
 2. Apply the theme using your preferred method. For example, you can use `lxappearance`.
 
-Additionally, you may need to copy the contents of `~/.config/gtk-3.0/` to `~/.config/gtk-4.0/`, or set the `GTK_THEME` environment variable in your ~/.profile file:
+Additionally, you may need to copy the contents of `~/.config/gtk-3.0/` to `~/.config/gtk-4.0/`, or set the `GTK_THEME` environment variable in your `~/.profile` file:
 ```
 export GTK_THEME=Desolate
 ```
