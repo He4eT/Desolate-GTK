@@ -20,7 +20,7 @@ Additionally, you might need to copy the contents of `~/.config/gtk-3.0/` to `~/
 export GTK_THEME=Desolate
 ```
 
-## Customisation
+## Customization
 
 You could change theme colors in `general/gtk-colors.css`:
 ```
