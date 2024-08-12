@@ -1,6 +1,6 @@
 # Desolate GTK
 
-Another customizable not-so-colorful GTK theme. 
+Another customizable not-so-colorful GTK theme.
 
 This is a variation of [linea-nord-color](https://github.com/deviantfero/wpgtk-templates) theme, which is part of [wpgtk](https://github.com/deviantfero/wpgtk) project.
 
