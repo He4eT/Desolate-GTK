@@ -13,9 +13,9 @@ This is a variation of [linea-nord-color](https://github.com/deviantfero/wpgtk-t
 cd ~/.themes
 git clone https://github.com/He4eT/Desolate-GTK.git Desolate
 ```
-2. Apply the theme in any way you like. You can use `lxappearance`, for example.
+2. Apply the theme using your preferred method. For example, you can use `lxappearance`.
 
-Additionally, you might need to copy the contents of `~/.config/gtk-3.0/` to `~/.config/gtk-4.0/`, or set the `GTK_THEME` environment variable in your ~/.profile file:
+Additionally, you may need to copy the contents of `~/.config/gtk-3.0/` to `~/.config/gtk-4.0/`, or set the `GTK_THEME` environment variable in your ~/.profile file:
 ```
 export GTK_THEME=Desolate
 ```
