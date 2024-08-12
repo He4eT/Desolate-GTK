@@ -1,6 +1,6 @@
 # Desolate GTK
 
-Another customizable not-so-colorful GTK theme.
+Another customizable not-so-colorful GTK theme for your tiling WM.
 
 This is a variation of [linea-nord-color](https://github.com/deviantfero/wpgtk-templates) theme, which is part of [wpgtk](https://github.com/deviantfero/wpgtk) project.
 
@@ -29,6 +29,12 @@ You could change theme colors in `general/gtk-colors.css`:
 @define-color gtk_selection_color #b58900;
 ```
 ![Solarized colors](screenshots/solarized.png)
+
+## See Also
+
+- [GTK Theming Guide](https://gtkthemingguide.vercel.app/)
+- [AWF - A widget factory (extended)](https://github.com/luigifab/awf-extended)
+- `GTK_THEME=Desolate-GTK awf-gtk3`
 
 ## License
 
