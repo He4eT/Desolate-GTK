@@ -1072,7 +1072,7 @@ switch{
 switch slider {
 	min-height: 20px;
 	min-width: 20px;
-	border-width: 2px;
+	border-width: 1px;
 	background-color: @gtk_button_color;
 	border-color: @gtk_selected_bg_color;
 }
