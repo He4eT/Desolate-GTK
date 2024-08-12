@@ -5,9 +5,7 @@
 
 @define-color gtk_titlebar_bg_color @gtk_bg_color;
 
-@define-color gtk_fg_color #212121;
 @define-color gtk_text_color @gtk_fg_color;
-@define-color gtk_base_color #bdbdbd;
 @define-color gtk_bg_color @gtk_base_color;
 
 @define-color gtk_button_color mix(@gtk_bg_color, @gtk_fg_color, 0.1);
@@ -22,7 +20,7 @@
 @define-color gtk_borders mix(@gtk_bg_color,@gtk_fg_color,0.1);
 @define-color gtk_transparent_borders alpha(@gtk_fg_color,0.1);
 
-@define-color gtk_selected_bg_color #757575;
+@define-color gtk_selected_bg_color @gtk_selection_color;
 @define-color gtk_selected_fg_color shade(@gtk_selected_bg_color, 0.2);
 
 @define-color gtk_highlight alpha(@gtk_selected_bg_color,0.6);
